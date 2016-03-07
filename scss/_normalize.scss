@@ -1,0 +1,43 @@
+html{
+    font-family: sans-serif;
+}
+
+//
+// Remove default margin.
+//
+
+body{
+    margin: 0;
+}
+
+//
+// Correct 'block' display
+//
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display:block;
+}
+
+//
+// Correct 'inline-block'
+// Normalize vertical alignment of progress
+//
+
+audio,
+canvas,
+progress,
+video{
+    display:inline-block;
+    vertical-align: baseline;
+}

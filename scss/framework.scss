@@ -2,11 +2,17 @@
  *  Framework V.0.0.1
  */
 
-// Core Variables
+ // Core variables and mixins
 @import "variables";
 @import "mixins";
 
-// Core CSS
-@import "grid";
+ // Reset and dependencies
+ @import "normalize";
 
-// Components
+ // Core CSS
+ @import "reboot";
+ @import "grid";
+
+ // Components
+ // Utility classes
+ @import "utilities";
