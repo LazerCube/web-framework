@@ -3,8 +3,8 @@
  */
 
  // Core variables and mixins
-@import "variables";
-@import "mixins";
+ @import "variables";
+ @import "mixins";
 
  // Reset and dependencies
  @import "normalize";
@@ -14,5 +14,7 @@
  @import "grid";
 
  // Components
+ @import "jumbotron";
+
  // Utility classes
  @import "utilities";

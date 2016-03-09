@@ -1,0 +1,18 @@
+.jumbotron{
+    padding: $jumbotron-padding ($jumbotron-padding / 2);
+    margin-bottom: $jumbotron-padding;
+    background-color: $jumbotron-bg;
+    background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png");
+    color: $gray-lighter;
+    @include border-radius($border-radius-lg);
+    @include shadow();
+
+    @include media-breakpoint-up(sm) {
+        padding: ($jumbotron-padding * 2) $jumbotron-padding;
+    }
+}
+
+.jumbotron-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}

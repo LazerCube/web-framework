@@ -20,6 +20,7 @@
 $gray-dark:             #373a3c !default;
 $gray:                  #55595c !default;
 $gray-light:            #818a91 !default;
+$gray-lighter:          #f1f1f1 !default;
 
 $brand-primary:         #0275d8 !default;
 $brand-success:         #5cb85c !default;
@@ -33,6 +34,8 @@ $brand-danger:          #d9534f !default;
 
 $enable-grid-classes:           true    !default;
 $enable-flex:                   false   !default;
+$enable-rounded:                true    !default;
+$enable-shadow:                 true    !default;
 
 //  Body
 //
@@ -101,3 +104,14 @@ $font-size-root: 16px !default;
 $font-size-base: 1rem !default;
 
 $line-height-base: 1.5 !default;
+
+// Componets
+
+$border-radius:     .25rem  !default;
+$border-radius-lg:  .3rem   !default;
+$border-radius-sm:  .2rem   !default;
+
+// Jumbotron
+
+$jumbotron-padding:     2rem !default;
+$jumbotron-bg:          $gray-light !default;
