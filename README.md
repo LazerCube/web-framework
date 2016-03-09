@@ -1,12 +1,12 @@
 #Web framework based off Bootstrap
 
-##Currently Added
+###Currently Added
 
 *   Normalization
 *   Defaults styling for common HTML elements for easier usage with the framework
 *   Grid system
 
-##Todo
+###Todo
 
 *   Jumbotron
 *   Navbar
