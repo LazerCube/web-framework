@@ -40,3 +40,8 @@ Gulp
 *   Buttons
 *   Default Theme
 *   Cards
+*   Unloaded image styling
+*   Dropdowns
+*   Search bar
+*   Tables
+*   Documentation website
