@@ -1,11 +1,15 @@
 /*
  *  Framework V.0.0.1
  */
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600";
 html {
   font-family: sans-serif; }
 
 body {
   margin: 0; }
+
+body, html {
+  height: 100%; }
 
 article,
 aside,
@@ -44,8 +48,37 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #373a3c;
+  color: #444444;
   background-color: #ffffff; }
+
+a {
+  text-decoration: underline;
+  color: #56B4D3; }
+
+a:hover {
+  text-decoration: underline;
+  color: #2e8faf; }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fbfbfb;
+  background: #171818; }
+
+::selection {
+  color: #fbfbfb;
+  background: #171818; }
+
+img {
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
 
 .container {
   margin-left: auto;
@@ -946,7 +979,7 @@ body {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #818a91;
-  color: #f1f1f1;
+  color: #fbfbfb;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
   @media (min-width: 544px) {
     .jumbotron {
@@ -960,7 +993,95 @@ body {
   padding-left: 0px; }
 
 .jumbotron-full {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px; }
+
+.page .intro {
+  font-size: 2rem;
+  padding: 1rem 0; }
+
+.page .section-title {
+  letter-spacing: 0.125rem;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+  font-weight: 400; }
+  .page .section-title .section-title-left, .page .section-title .section-title-right {
+    background-color: #ffffff;
+    z-index: 1; }
+  .page .section-title .section-title-right, .page .section-title .section-line {
+    position: absolute; }
+  .page .section-title .section-title-left {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px;
+    padding-right: 1rem;
+    float: left; }
+  .page .section-title .section-title-right {
+    right: 0;
+    padding-left: 1rem;
+    display: block;
+    clear: both; }
+  .page .section-title .section-line {
+    height: 2px;
+    margin-top: -2px;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #d9d9d9; }
+
+.page article {
+  padding-bottom: 2rem; }
+
+.thumb-image {
+  position: relative;
+  display: inline-block; }
+  .thumb-image .thumb-overlay {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: 1; }
+    .thumb-image .thumb-overlay .thumb-container {
+      text-align: left;
+      font-size: 1.5rem;
+      color: #ffffff;
+      width: 85%;
+      padding: 1rem;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .thumb-image .thumb-overlay .thumb-container-full {
+      width: 100%; }
 
 .center-text {
-  text-align: center; }
+  text-align: center !important; }
+
+.highlight {
+  background-color: #56B4D3;
+  color: #ffffff; }
+
+.tag {
+  color: #ffffff;
+  background: #36A396;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.55rem;
+  margin: 0.5rem 0.35rem 0 0;
+  display: inline-block;
+  border-radius: 0.2rem; }
+  .tag a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%; }
+
+.horizontalGradient_1 {
+  background: #348F50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #348F50, #56B4D3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #348F50, #56B4D3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }

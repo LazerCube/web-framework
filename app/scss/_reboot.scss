@@ -30,3 +30,54 @@ body {
   color: $body-color;
   background-color: $body-bg;
 }
+
+//
+// links
+//
+
+a{
+    text-decoration: $link-decoration;
+    color: $brand-primary;
+}
+
+a:hover{
+    text-decoration: $link-hover-decoration;
+    color: $link-hover-color;
+}
+
+//
+// Selection
+//
+
+::-moz-selection { /* Code for Firefox */
+    color: $selection-color;
+    background: $selection-background;
+}
+
+::selection {
+    color: $selection-color;
+    background: $selection-background;
+}
+
+//
+// Images
+//
+
+img{
+    vertical-align: middle;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+
+//
+// ul/Li
+//
+
+ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}

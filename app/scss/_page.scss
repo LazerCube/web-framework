@@ -1,0 +1,51 @@
+.page{
+    .intro{
+        font-size:$page-intro-font-size;
+        padding: $page-intro-padding;
+    }
+    .section-title{
+        letter-spacing: $page-title-letter-space;
+        position: relative;
+        overflow: hidden;
+        padding: $page-intro-padding;
+        font-weight: 400;
+
+        .section-title-left, .section-title-right{
+            background-color: $body-bg;
+            z-index: 1;
+        }
+
+        .section-title-right, .section-line{
+	           position: absolute;
+        }
+
+        .section-title-left{
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0px;
+            padding-right: $page-title-text-padding;
+            float:left;
+        }
+
+        .section-title-right{
+            right: 0;
+            padding-left: $page-title-text-padding;
+            display:block;
+            clear:both;
+        }
+
+        .section-line{
+            height: $page-title-line-height;
+            margin-top: - $page-title-line-height;
+            z-index: -1;
+            top:50%;
+            left: 0;
+            right: 0;
+            background: $white-darker;
+        }
+    }
+
+    article{
+        padding-bottom: 2rem;
+    }
+}

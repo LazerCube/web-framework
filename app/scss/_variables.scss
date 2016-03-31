@@ -7,22 +7,34 @@
 // Colors
 // Body
 // Links
+// Selection
 // Grid breakpoints
 // Grid containers
 // Grid columns
 // Typography
+// Jumbotron
+// Page
 
 
 // Colours
 //
 // Grayscale and brand colors for use across framework
 
-$gray-dark:             #373a3c !default;
+
+$dark-primary:          #171818 !default;
+$white:                 #ffffff !default;
+$white-darker:          darken($white, 15%)     !default;
+
+$gray-dark:             #444444 !default;
 $gray:                  #55595c !default;
 $gray-light:            #818a91 !default;
-$gray-lighter:          #f1f1f1 !default;
+$gray-lighter:          #fbfbfb !default;
 
-$brand-primary:         #0275d8 !default;
+$brand-primary:         #56B4D3 !default;
+$brand-secondary:       #36A396 !default;
+
+$green-dark:            #348F50 !default;
+
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -41,7 +53,7 @@ $enable-shadow:                 true    !default;
 //
 // Settings for the <body> element.
 
-$body-bg:               #ffffff !default;
+$body-bg:               $white !default;
 $body-color:            $gray-dark  !default;
 
 // Links
@@ -49,9 +61,18 @@ $body-color:            $gray-dark  !default;
 // Style for links
 
 $link-color:            $brand-primary  !default;
-$link-decoration:       none !default;
+$link-decoration:       underline !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
+
+$tag-link-decoration:   none    !default;
+
+// Selection Color
+//
+// Style for selection
+
+$selection-color:       $gray-lighter;
+$selection-background:   $dark-primary;
 
 // Grid breakpoints
 //
@@ -98,6 +119,10 @@ $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
+// import fonts
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600";
+
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px !default;
 
@@ -113,5 +138,35 @@ $border-radius-sm:  .2rem   !default;
 
 // Jumbotron
 
-$jumbotron-padding:     2rem !default;
+$jumbotron-padding:     2rem        !default;
 $jumbotron-bg:          $gray-light !default;
+
+// page
+
+$page-intro-padding:   1rem 0       !default;
+$page-intro-font-size: 2rem         !default;
+
+$page-title-letter-space: 0.125rem  !default;
+$page-title-padding: 1.25rem 0      !default;
+
+$page-title-text-padding: 1rem   !default;
+
+$page-title-line-height: 2px        !default;
+
+// Images
+
+$thumb-overlay-text-align:  left    !default;
+$thumb-overlay-font-size:   1.5rem  !default;
+$thumb-overlay-font-color:  $white  !default;
+
+$thumb-container-width: 85%          !default;
+$thumb-container-padding: 1rem     !default;
+
+// Tags
+
+$tag-font-color: $white                     !default;
+$tag-font-size: 0.8rem                      !default;
+$tag-color:  $brand-secondary               !default;
+
+$tag-padding:   0.25rem 0.55rem             !default;
+$tag-margin:    0.50rem 0.35rem 0 0               !default;
