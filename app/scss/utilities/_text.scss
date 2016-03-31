@@ -7,6 +7,12 @@
     color: $white;
 }
 
+.hide-text {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
 .tag{
     color:$tag-font-color;
     background: $tag-color;

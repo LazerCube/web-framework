@@ -23,6 +23,17 @@ img{
             left: 0;
         }
 
+        p{
+            display:none;
+        }
+
+        @include media-breakpoint-up(sm) {
+            p{
+                display:block;
+                overflow: hidden;
+            }
+        }
+
         .thumb-container-full{
             width:100%;
         }

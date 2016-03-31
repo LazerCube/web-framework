@@ -47,5 +47,32 @@
 
     article{
         padding-bottom: 2rem;
+        header{
+            h1,h2,h3,h4,h5,h6{
+                margin: 0.40rem 0 0 0;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .article-meta{
+                color: $gray-light;
+                font-size: $article-meta-font-size;
+                margin-top: 0;
+
+                .meta-cards{
+                	padding: 0 10px 0 10px;
+                	border-right: 1px solid $white-darker;
+                }
+                
+                .meta-author{
+                       padding-left: 0px;
+                }
+
+            }
+        }
     }
 }
