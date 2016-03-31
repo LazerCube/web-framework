@@ -34,17 +34,17 @@ Gulp
 
 ### Currently working on in branch
 
-*   Jumbotron
+*   Articles
 
 ### Todo
 
-*   Jumbotron
+*   create a more generic article Style
+*   remove section-line. Move to website css
+*   h1,h2,h3 tags
 *   Navbar
 *   Side Navbar
 *   Buttons
-*   Default Theme
 *   Cards
-*   Unloaded image styling
 *   Dropdowns
 *   Search bar
 *   Tables
