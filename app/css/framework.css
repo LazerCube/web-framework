@@ -1086,11 +1086,6 @@ ul {
   background-color: #56B4D3;
   color: #ffffff; }
 
-.hide-text {
-  display: none;
-  visibility: hidden;
-  overflow: hidden; }
-
 .tag {
   color: #ffffff;
   background: #36A396;
