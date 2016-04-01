@@ -33,16 +33,14 @@ video {
   vertical-align: baseline; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent; }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit; }
-
-html {
-  font-size: 16px;
-  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -998,58 +996,59 @@ ul {
   padding: 0px;
   margin: 0px; }
 
-.page .intro {
+.intro {
   font-size: 2rem;
   padding: 1rem 0; }
 
-.page .section-title {
+.section-title {
   letter-spacing: 0.125rem;
   position: relative;
   overflow: hidden;
   padding: 1rem 0;
   font-weight: 400; }
-  .page .section-title .section-title-left, .page .section-title .section-title-right {
+  .section-title .section-title-left, .section-title .section-title-right {
     background-color: #ffffff;
-    z-index: 1; }
-  .page .section-title .section-title-right, .page .section-title .section-line {
+    z-index: 2; }
+  .section-title .section-title-right, .section-title .section-line {
     position: absolute; }
-  .page .section-title .section-title-left {
+  .section-title .section-title-left {
     text-transform: uppercase;
     font-weight: 500;
     margin: 0px;
     padding-right: 1rem;
-    float: left; }
-  .page .section-title .section-title-right {
+    float: left;
+    position: relative; }
+  .section-title .section-title-right {
     right: 0;
     padding-left: 1rem;
     display: block;
     clear: both; }
-  .page .section-title .section-line {
+  .section-title .section-line {
     height: 2px;
     margin-top: -2px;
-    z-index: -1;
+    z-index: 0;
     top: 50%;
     left: 0;
     right: 0;
     background: #d9d9d9; }
 
-.page article {
+.post {
   padding-bottom: 2rem; }
-  .page article header h1, .page article header h2, .page article header h3, .page article header h4, .page article header h5, .page article header h6 {
+  .post header h1, .post header h2, .post header h3, .post header h4, .post header h5, .post header h6 {
     margin: 0.40rem 0 0 0; }
-  .page article header a {
+  .post header a {
     text-decoration: none;
     color: inherit; }
-  .page article header a:hover {
+  .post header a:hover {
     text-decoration: underline; }
-  .page article header .article-meta {
+  .post header .article-meta {
     color: #818a91;
     font-size: 0.95rem;
     margin-top: 0; }
-    .page article header .article-meta .meta-cards {
+    .post header .article-meta .meta-cards {
       padding: 0 10px 0 10px;
       border-right: 1px solid #d9d9d9; }
-    .page article header .article-meta .meta-author {
+    .post header .article-meta .meta-author {
       padding-left: 0px; }
 
 .thumb-image {
@@ -1078,6 +1077,14 @@ ul {
         overflow: hidden; } }
     .thumb-image .thumb-overlay .thumb-container-full {
       width: 100%; }
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
+  @media (min-width: 544px) {
+    .card {
+      padding: 0rem 0rem; } }
 
 .center-text {
   text-align: center !important; }

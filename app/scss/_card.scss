@@ -1,0 +1,9 @@
+.card{
+    background-color: $white;
+    @include border-radius($border-radius-lg);
+    @include shadow();
+
+    @include media-breakpoint-up(sm) {
+        padding: ($card-padding * 2) $card-padding;
+    }
+}
