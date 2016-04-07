@@ -119,6 +119,10 @@ $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
+//H tag font-weight
+
+$font-weight:   500 !default; 
+
 // import fonts
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,600";

@@ -78,6 +78,10 @@ ul {
   margin: 0px;
   padding: 0px; }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h6, .h6 {
+  font-weight: 500; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -1004,8 +1008,7 @@ ul {
   letter-spacing: 0.125rem;
   position: relative;
   overflow: hidden;
-  padding: 1rem 0;
-  font-weight: 400; }
+  padding: 1rem 0; }
   .section-title .section-title-left, .section-title .section-title-right {
     background-color: #ffffff;
     z-index: 2; }
@@ -1013,7 +1016,6 @@ ul {
     position: absolute; }
   .section-title .section-title-left {
     text-transform: uppercase;
-    font-weight: 500;
     margin: 0px;
     padding-right: 1rem;
     float: left;
@@ -1038,7 +1040,8 @@ ul {
     margin: 0.40rem 0 0 0; }
   .post header a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    font-weight: bold; }
   .post header a:hover {
     text-decoration: underline; }
   .post header .article-meta {
