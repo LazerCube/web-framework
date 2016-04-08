@@ -1,0 +1,38 @@
+//
+// Pre tags
+//
+
+code{
+	padding: $code-padding;
+	margin: $code-margin;
+	background-color: $code-background;
+	color: $code-color;
+    white-space: nowrap;
+    font-size: $code-font-size;
+
+    @include border-radius($border-radius-sm);
+}
+
+// Blocks of code
+pre{
+    display: block;
+    margin: $pre-margin;
+    font-size: $code-font-size;
+    color: $pre-color;
+    overflow: auto;
+
+    // Account for some code outputs that place code in pre
+    code{
+        padding:$code-pre-margin;
+        display:block;
+        color: inherit;
+        font-size: inherit;
+        white-space: pre;
+    }
+}
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: $pre-scrollable-max-height;
+  overflow-y: scroll;
+}
