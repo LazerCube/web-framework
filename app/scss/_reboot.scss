@@ -75,8 +75,27 @@ ul{
     padding:0px;
 }
 
-//H1
+//H tags
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h6,.h6{
     font-weight: $font-weight;
+}
+
+// Figure
+figure {
+    margin: 0;
+}
+
+// Block quotes
+
+blockquote{
+	background-color: #f6f6f6;
+	font-style: italic;
+	border-left: 4px solid #56B4D3;
+	padding: 15px;
+	margin: 15px 40px;
+}
+
+blockquote>p{
+	font-size: 1em;
 }

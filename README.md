@@ -1,4 +1,4 @@
-#   Web framework based off Bootstrap
+#   Web framework
 
 ### Installation
 
@@ -28,24 +28,12 @@ Gulp
 
 ### Currently Added
 
-*   Normalization
-*   Defaults styling for common HTML elements for easier usage with the framework
 *   Grid system
 
 ### Currently working on in branch
 
-*   Articles
+*   Rebooting the project
 
 ### Todo
 
-*   create a more generic article Style
-*   remove section-line. Move to website css
-*   h1,h2,h3 tags
-*   Navbar
-*   Side Navbar
-*   Buttons
-*   Cards
-*   Dropdowns
-*   Search bar
-*   Tables
-*   Documentation website
+*   
