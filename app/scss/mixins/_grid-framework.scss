@@ -3,6 +3,7 @@
 // any value of `$grid-columns`.
 
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @include base_column($gutter);
   $breakpoint-counter: 0;
   @each $breakpoint in map-keys($breakpoints) {
     $breakpoint-counter: ($breakpoint-counter + 1);
@@ -43,4 +44,13 @@
       }
     }
   }
+}
+
+@mixin base_column($gutter: $grid-gutter-width) {
+    .col{
+        position: relative;
+        min-height: 1px;
+        padding-right: ($gutter / 2);
+        padding-left:  ($gutter / 2);
+    }
 }
