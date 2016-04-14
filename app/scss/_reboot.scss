@@ -15,43 +15,6 @@ html{
     box-sizing: inherit;
 }
 
-body {
-  // Make the `body` use the `font-size-root`
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  color: $body-color;
-  background-color: $body-bg;
-}
-
-//
-// links
-//
-
-a{
-    text-decoration: $link-decoration;
-    color: $brand-primary;
-}
-
-a:hover{
-    text-decoration: $link-hover-decoration;
-    color: $link-hover-color;
-}
-
-//
-// Selection
-//
-
-::-moz-selection { /* Code for Firefox */
-    color: $selection-color;
-    background: $selection-background;
-}
-
-::selection {
-    color: $selection-color;
-    background: $selection-background;
-}
-
 //
 // Images
 //
@@ -64,7 +27,6 @@ img{
     border: 0;
 }
 
-
 //
 // ul/Li
 //
@@ -75,27 +37,8 @@ ul{
     padding:0px;
 }
 
-//H tags
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h6,.h6{
-    font-weight: $font-weight;
-}
 
 // Figure
 figure {
     margin: 0;
-}
-
-// Block quotes
-
-blockquote{
-	background-color: #f6f6f6;
-	font-style: italic;
-	border-left: 4px solid #56B4D3;
-	padding: 15px;
-	margin: 15px 40px;
-}
-
-blockquote>p{
-	font-size: 1em;
 }

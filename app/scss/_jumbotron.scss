@@ -12,7 +12,7 @@
 
 .container{
     .jumbotron{
-        @include border-radius($border-radius-lg);
+        @include border-radius($border-radius-sm);
     }
 }
 

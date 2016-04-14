@@ -1,0 +1,159 @@
+// --------------------------------
+//               Body
+//--------------------------------
+
+body {
+  // Make the `body` use the `font-size-root`
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+
+// --------------------------------
+//            Header Tags
+//--------------------------------
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h6,.h6{
+    font-family: inherit;
+    font-weight: $H-font-weight;
+    color: inherit;
+    line-height: $H-line-height;
+}
+
+.h1,.h2,.h3,h1,h2,h3{
+    margin-top: $H-large-margin-top;
+    margin-bottom: $H-large-margin-bottom;
+}
+
+.h4,.h5,.h6,h4,h5,h6{
+    margin-top: $H-small-margin-top;
+    margin-bottom: $H-small-margin-bottom;
+}
+
+// Small <small>
+
+.h1 .small, .h1 small, .h2 .small, .h2 small,
+.h3 .small, .h3 small, .h4 .small, .h4 small,
+.h5 .small, .h5 small, .h6 .small, .h6 small,
+h1 .small, h1 small, h2 .small, h2 small,
+h3 .small, h3 small, h4 .small, h4 small,
+h5 .small, h5 small, h6 .small, h6 small {
+    font-weight: 300;
+    line-height: 1;
+    color: $small-font-color;
+}
+
+//H Size
+
+h1,.h1{
+    font-size: 2.75rem
+}
+
+h2,.h2{
+    font-size: 2.25rem
+}
+
+h3,.h3{
+
+    font-size: 1.75rem
+}
+
+h4,.h4{
+    font-size: 1.25rem
+}
+
+h5,.h5{
+    font-size: 0.90rem
+}
+
+h6,.h6{
+    font-size: .75rem
+}
+
+// --------------------------------
+//           blockquote
+//--------------------------------
+
+blockquote{
+	background-color: $body-bg;
+	font-style: italic;
+	border-left: 4px solid #56B4D3;
+	padding: 15px;
+	margin: 15px 0px 15px 40px;
+}
+
+blockquote>p{
+	font-size: 1em;
+}
+
+// --------------------------------
+//             Links
+//--------------------------------
+
+a{
+    text-decoration: $link-decoration;
+    color: $brand-primary;
+}
+
+a:hover{
+    text-decoration: $link-hover-decoration;
+    color: $link-hover-color;
+}
+
+
+// --------------------------------
+//           Selection
+//--------------------------------
+
+::-moz-selection { /* Code for Firefox */
+    color: $selection-color;
+    background: $selection-background;
+}
+
+::selection {
+    color: $selection-color;
+    background: $selection-background;
+}
+
+// --------------------------------
+//           Font styles
+//-------------------------------- */
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-fancy {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+// --------------------------------
+//             Misc
+// --------------------------------
+
+.center-text{
+    text-align: center!important;
+}
+
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
+
+.underline-section{
+    border-bottom: 2px solid $base-04;
+    margin-top: 3rem;
+}
