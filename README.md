@@ -36,6 +36,5 @@ Gulp
 
 *   Cards
 *   Colours
-*   <hr>
 *   Navigation
 *   Buttons
