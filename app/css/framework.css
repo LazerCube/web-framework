@@ -57,6 +57,13 @@ ul {
 figure {
   margin: 0; }
 
+hr {
+  height: 3px;
+  padding: 0;
+  margin: 1.25rem 0;
+  background-color: #BDC3C7;
+  border: 0 none; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -814,10 +821,6 @@ a:hover {
 
 .no-margin-bottom {
   margin-bottom: 0px; }
-
-.underline-section {
-  border-bottom: 2px solid #BDC3C7;
-  margin-top: 3rem; }
 
 .jumbotron {
   padding: 2rem 1rem;
