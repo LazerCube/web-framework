@@ -960,3 +960,16 @@ pre {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #3498DB, #3498DB);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.palette {
+  height: 100px;
+  border-radius: 0.2rem; }
+
+.brand-primary {
+  background-color: #3498DB; }
+
+.body-bg {
+  background-color: #ECF0F1; }
+
+.font-color {
+  background-color: #181818; }

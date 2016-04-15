@@ -1,3 +1,20 @@
 .horizontalGradient_1{
     @include horizontalGradient($brand-primary, $brand-primary);
 }
+
+.palette{
+    height: 100px;
+    @include border-radius($border-radius-sm);
+}
+
+.brand-primary{
+    background-color: $brand-primary;
+}
+
+.body-bg{
+    background-color: $body-bg;
+}
+
+.font-color{
+    background-color: $font-color;
+}
