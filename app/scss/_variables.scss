@@ -20,53 +20,32 @@
 //
 // Grayscale and brand colors for use across framework
 
-$white:                 #fefefe !default;
-$white-darker:          darken($white, 15%)     !default;
-
-$gray-dark:             #444444 !default;
-$gray:                  #55595c !default;
-$gray-light:            #818a91 !default;
-$gray-lighter:          #fbfbfb !default;
-
-$green-dark:            #348F50 !default;
-
-//Base 16
-
-$base-00:           #2C3E50 !default;
-$base-01:           #34495E !default;
-$base-02:           #7F8C8D !default;
-$base-03:           #95A5A6 !default;
-$base-04:           #BDC3C7 !default;
-$base-05:           #e0e0e0 !default;
-$base-06:           #f5f5f5 !default;
-$base-07:           #ECF0F1 !default;
-
-$base-08:           #E74C3C !default;
-$base-09:           #E67E22 !default;
-$base-0A:           #F1C40F !default;
-$base-0B:           #2ECC71 !default;
-$base-0C:           #1ABC9C !default;
-$base-0D:           #3498DB !default;
-$base-0E:           #9B59B6 !default;
-$base-0F:           #be643c !default;
-
-$full-white:        #ffffff !default;
+$tuatara:               #46494C                         !default;
+$william:               #56B4D3                         !default;
+$white:                 #F1F1F1                         !default;
+$alto:                  #C5C3C6                         !default;
+$san-juan:              #348F50                         !default;
 
 // Brand Colours
 
-$font-color:            #181818                         !default;
-$font-color-light:      $base-06                        !default;
+$font-color-primary:            $tuatara                            !default;
+$font-color-primary-lighter:    lighten($font-color-primary, 10%)   !default;
 
-$brand-primary:         $base-0D                        !default;
-$brand-primary-dark:    darken($brand-primary, 10%)     !default;
-$brand-primary-darker:  darken($brand-primary, 25%)     !default;
+$font-color-secondary:          $white                               !default;
+$font-color-secondary-darker:   $alto                                !default;
 
-$brand-secondary:       $base-01                        !default;
-$brand-secondary-dark:  darken($brand-secondary, 10%)   !default;
-$brand-secondary-darker:darken($brand-secondary, 25%)   !default;
+$brand-primary:         $william                       !default;
+$brand-primary-dark:    darken($brand-primary, 5%)     !default;
+$brand-primary-darker:  darken($brand-primary, 15%)    !default;
 
-$body-bg:               $base-07     !default;
-$body-color:            $font-color  !default;
+$brand-secondary:       $san-juan                       !default;
+$brand-secondary-dark:  darken($brand-secondary, 5%)   !default;
+$brand-secondary-darker:darken($brand-secondary, 15%)   !default;
+
+//Body
+
+$body-bg:               $white                          !default;
+$body-color:            $font-color-primary             !default;
 
 // Options
 //
@@ -83,7 +62,7 @@ $enable-shadow:                 true    !default;
 
 $link-color:            $brand-primary  !default;
 $link-decoration:       underline !default;
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      lighten($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 
 $tag-link-decoration:   none    !default;
@@ -92,8 +71,8 @@ $tag-link-decoration:   none    !default;
 //
 // Style for selection
 
-$selection-color:        $gray-lighter;
-$selection-background:   $brand-secondary-darker;
+$selection-color:        $font-color-secondary;
+$selection-background:   $font-color-primary;
 
 // Grid breakpoints
 //
@@ -151,8 +130,8 @@ $H-small-margin-bottom:     0.625rem    !default;
 
 //Small
 
-$small-font-color:  lighten($font-color, 25%)   !default;
-$small-font:        65%                         !default;
+$small-font-color:  $font-color-primary-lighter     !default;
+$small-font:        65%                             !default;
 
 // import fonts
 
@@ -163,6 +142,11 @@ $font-size-root: 15px !default;
 $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
 
+//Hr
+
+$hr-height:     3px                             !default;
+$hr-color:      $font-color-secondary-darker    !default;
+
 // Componets
 
 $border-radius:     .25rem  !default;
@@ -171,8 +155,8 @@ $border-radius-sm:  .2rem   !default;
 
 // Jumbotron
 
-$jumbotron-padding:     2rem        !default;
-$jumbotron-bg:          $gray-light !default;
+$jumbotron-padding:     2rem            !default;
+$jumbotron-bg:          $brand-primary  !default;
 
 // page
 
@@ -185,18 +169,18 @@ $page-title-line-height: 2px        !default;
 
 // Images
 
-$thumb-overlay-text-align:  left                !default;
-$thumb-overlay-font-size:   1.5rem              !default;
-$thumb-overlay-font-color:  $font-color-light   !default;
+$thumb-overlay-text-align:  left                            !default;
+$thumb-overlay-font-size:   1.5rem                          !default;
+$thumb-overlay-font-color:  $font-color-secondary           !default;
 
 $thumb-container-width: 85%         !default;
 $thumb-container-padding: 1rem      !default;
 
 // Tags
 
-$tag-font-color: $font-color-light          !default;
+$tag-font-color: $font-color-secondary      !default;
 $tag-font-size: 0.8rem                      !default;
-$tag-color:  $brand-secondary               !default;
+$tag-color:     $brand-secondary            !default;
 $tag-padding:   0.25rem 0.55rem             !default;
 $tag-margin:    0.50rem 0.35rem 0 0         !default;
 
@@ -207,11 +191,11 @@ $code-margin:           0 0.2rem                    !default;
 $code-padding:          0.15rem 0.5rem              !default;
 
 $pre-margin:            1rem 0rem                   !default;
-$pre-color:             $font-color-light           !default;
+$pre-color:             $font-color-secondary       !default;
 
 $code-pre-margin:       1rem 1.5rem                 !default;
 $code-background:       #333333                     !default;
-$code-color:            $font-color-light           !default;
+$code-color:            $font-color-secondary       !default;
 
 $pre-scrollable-max-height: 340px                   !default;
 
@@ -222,8 +206,8 @@ $card-content-padding:  20px                        !default;
 $card-title-line-height:3.2rem                      !default;
 $card-title-font-size:  1.6rem                      !default;
 
-$card-action-padding:   $card-content-padding       !default;
-$card-action-border:    1px solid $base-05          !default;
+$card-action-padding:   $card-content-padding                  !default;
+$card-action-border:    1px solid $font-color-secondary-darker !default;
 
 $card-link-color:       $link-color                 !default;
 

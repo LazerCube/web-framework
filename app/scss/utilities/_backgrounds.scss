@@ -1,5 +1,5 @@
 .horizontalGradient_1{
-    @include horizontalGradient($brand-primary, $brand-primary);
+    @include horizontalGradient($brand-primary, $brand-secondary);
 }
 
 .palette{
@@ -7,14 +7,22 @@
     @include border-radius($border-radius-sm);
 }
 
-.brand-primary{
-    background-color: $brand-primary;
+.tuatara{
+    background-color: $tuatara;
 }
 
-.body-bg{
-    background-color: $body-bg;
+.william{
+    background-color: $william;
 }
 
-.font-color{
-    background-color: $font-color;
+.white{
+    background-color: $white;
+}
+
+.alto{
+    background-color: $alto;
+}
+
+.san-juan{
+    background-color: $san_juan;
 }

@@ -2,7 +2,7 @@
     padding: $jumbotron-padding ($jumbotron-padding / 2);
     margin-bottom: $jumbotron-padding;
     background-color: $jumbotron-bg;
-    color: $gray-lighter;
+    color: $font-color-secondary;
     @include shadow();
 
     @include media-breakpoint-up(sm) {
