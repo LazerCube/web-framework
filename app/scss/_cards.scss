@@ -1,0 +1,88 @@
+.card{
+    position: relative;
+    margin: $card-margin;
+    background-color: $body-bg;
+    @include border-radius($border-radius-sm);
+    @include shadow();
+
+    .card-content{
+        padding: $card-content-padding;
+
+        .card-title{
+            line-height: $card-title-line-height;
+        }
+
+        p{
+            margin:0px;
+            color:inherit;
+        }
+    }
+
+    .card-image{
+        position: relative;
+
+        img{
+            display: block;
+            border-radius: 2px 2px 0 0;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .card-title{
+            color: $font-color-light;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: $card-content-padding;
+        }
+    }
+
+    .card-title{
+        font-size: $card-title-font-size;
+    }
+
+    .card-action{
+        position: relative;
+        background-color: inherit;
+        border-top: $card-action-border;
+        padding: $card-action-padding;
+        z-index: 2;
+
+        a{
+            color: $card-link-color;
+            margin-right: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+.card-panel{
+    margin: $card-margin;
+    padding: $card-content-padding;
+    background-color: $body-bg;
+    @include border-radius($border-radius-sm);
+    @include shadow();
+}
+
+.card.small{
+    height: $card-small;
+}
+
+.card.medium{
+    height: $card-medium;
+}
+
+.card.large{
+    height: $card-large;
+}
+
+.card.small .card-image,
+.card.medium .card-image,
+.card.large .card-image {
+    max-height: 60%;
+    overflow: hidden;
+}

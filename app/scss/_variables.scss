@@ -216,3 +216,19 @@ $code-background:       #333333                     !default;
 $code-color:            $font-color-light           !default;
 
 $pre-scrollable-max-height: 340px                   !default;
+
+// card
+
+$card-margin:           0.5rem 0 1rem 0             !default;
+$card-content-padding:  20px                        !default;
+$card-title-line-height:3.2rem                      !default;
+$card-title-font-size:  1.6rem                      !default;
+
+$card-action-padding:   $card-content-padding       !default;
+$card-action-border:    1px solid $base-05          !default;
+
+$card-link-color:       $link-color                 !default;
+
+$card-small:            300px                       !default;
+$card-medium:           400px                       !default;
+$card-large:            500px                       !default;
