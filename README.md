@@ -24,17 +24,17 @@ Gulp
 
 `gulp clean` - removes any old files from the distribution.
 
-### Currently Added
+### Completed
 
-*   Grid system
-
-### Currently working on in branch
-
-*   Rebooting the project
+*   Color palette
+*   Most tags
+*   Grid System
+*   Cards
+*   Jumbotron
 
 ### Todo
 
-*   Cards
-*   Colours
 *   Navigation
 *   Buttons
+*   Improve showcase website (Jekyll)
+*   Clean up SASS (_card.scss)
