@@ -21,10 +21,10 @@
 // Grayscale and brand colors for use across framework
 
 $tuatara:               #46494C                         !default;
-$william:               #56B4D3                         !default;
+$william:               #51a5e5                         !default;
 $white:                 #F1F1F1                         !default;
 $alto:                  #C5C3C6                         !default;
-$san-juan:              #348F50                         !default;
+$san-juan:              #213246                         !default;
 
 // Brand Colours
 
@@ -36,11 +36,13 @@ $font-color-secondary-darker:   $alto                                !default;
 
 $brand-primary:         $william                       !default;
 $brand-primary-dark:    darken($brand-primary, 5%)     !default;
-$brand-primary-darker:  darken($brand-primary, 15%)    !default;
+$brand-primary-darker:  darken($brand-primary, 10%)    !default;
 
 $brand-secondary:       $san-juan                       !default;
 $brand-secondary-dark:  darken($brand-secondary, 5%)   !default;
-$brand-secondary-darker:darken($brand-secondary, 15%)   !default;
+$brand-secondary-darker:darken($brand-secondary, 10%)   !default;
+
+$brand-secondary-light: #8c99ac !default;       //MAKE CAL
 
 //Body
 
@@ -216,3 +218,13 @@ $card-medium:           400px                       !default;
 $card-large:            500px                       !default;
 
 $card-image-size-max:   60%                         !default;
+
+// Nav sidebar-nav
+
+$sidebar-width: 200px   !default;
+$sidebar-color: $brand-secondary-light !default;
+$sidebar-active:    $font-color-secondary !default;
+
+// navbar
+
+$navbar-min-height: 95px    !default;

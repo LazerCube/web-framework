@@ -1,0 +1,63 @@
+
+header, main, footer{
+    padding-left: $sidebar-width;
+}
+
+ul.sidebar-nav:hover{
+    overflow-y: auto;
+}
+
+ul.sidebar-nav{
+    position: fixed;
+    overflow: hidden;
+    width: $sidebar-width;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    z-index: 999;
+    background: $brand-secondary;
+    font-size: .9rem;
+    @include shadow();
+
+    li{
+        text-indent: 20px;
+        line-height: 3.75rem;
+
+        a{
+            display:block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $sidebar-color;
+        }
+    }
+}
+
+.active{
+    background-color: $brand-primary;
+    color: $sidebar-active!important;
+}
+
+.navbar{
+    min-height: $navbar-min-height;
+    margin-bottom: 20px;
+    background-color: $body-bg;
+    @include shadow();
+}
+
+.navbar-fixed-top{
+    top: 0;
+}
+
+.navbar-fixed-bottom{
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 998;
+}
