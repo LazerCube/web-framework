@@ -755,7 +755,8 @@ h3 .small, h3 small, h4 .small, h4 small,
 h5 .small, h5 small, h6 .small, h6 small {
   font-weight: 300;
   line-height: 1;
-  color: #585858; }
+  color: #585858;
+  font-size: 65%; }
 
 h1, .h1 {
   font-size: 2.75rem; }
@@ -863,7 +864,8 @@ a:hover {
     position: relative; }
     .card .card-image img {
       display: block;
-      border-radius: 2px 2px 0 0;
+      border-top-right-radius: 0.2rem;
+      border-top-left-radius: 0.2rem;
       position: relative;
       left: 0;
       right: 0;

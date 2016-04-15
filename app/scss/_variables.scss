@@ -152,7 +152,7 @@ $H-small-margin-bottom:     0.625rem    !default;
 //Small
 
 $small-font-color:  lighten($font-color, 25%)   !default;
-
+$small-font:        65%                         !default;
 
 // import fonts
 
@@ -162,8 +162,6 @@ $small-font-color:  lighten($font-color, 25%)   !default;
 $font-size-root: 15px !default;
 $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
-
-
 
 // Componets
 
@@ -232,3 +230,5 @@ $card-link-color:       $link-color                 !default;
 $card-small:            300px                       !default;
 $card-medium:           400px                       !default;
 $card-large:            500px                       !default;
+
+$card-image-size-max:   60%                         !default;
