@@ -1,20 +1,35 @@
 
-header, main, footer{
-    margin-left: $sidebar-width;
+#wrapper {
+	margin-right: 0;
+	overflow: hidden;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
-.sidebar{
-    font-size: $sidebar-font-size;
+body.show_sidebar #wrapper {
+	margin-left: $sidebar-width;
+}
+
+#push_sidebar {
+    background: $sidebar-color;
     width: $sidebar-width;
+    font-size: $sidebar-font-size;
     position: fixed;
     overflow: hidden;
-    background: $sidebar-color;
-    left: 0;
+    left: -$sidebar-width;
     top: 0;
     height: 100%;
     z-index: 999;
 
-    @include shadow();
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 
     a{
         display:block;
@@ -67,6 +82,11 @@ header, main, footer{
     }
 }
 
+body.show_sidebar #push_sidebar{
+    left: 0;
+    @include shadow();
+}
+
 .img-icon{
     @include border-radius($border-radius-lg);
     background: url(https://unsplash.it/100/100?image=314);
@@ -83,10 +103,32 @@ header, main, footer{
 
 /*  NAVBAR  */
 
+.nav_trigger {
+    Display: block;
+    visibility: visible;
+    cursor: pointer;
+	display: inline-block;
+	font-size: 3rem;
+	margin: 10px 20px 0 50px;
+  	float:left;
+
+    @include media-breakpoint-up(lg) {
+        Display: none;
+        visibility: hidden;
+    }
+
+}
+
 .navbar{
     min-height: $navbar-min-height;
     margin-bottom: 20px;
     background-color: $body-bg;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 
     box-shadow: 0 2px 5px rgba(0,0,0,.26);
 }
@@ -101,9 +143,13 @@ header, main, footer{
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top{
-    margin-left: $sidebar-width;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 999;
+}
+
+body.show_sidebar .navbar-fixed-bottom,
+body.show_sidebar .navbar-fixed-top{
+    margin-left: $sidebar-width;
 }
