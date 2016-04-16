@@ -825,42 +825,66 @@ a:hover {
   margin-bottom: 0px; }
 
 header, main, footer {
-  padding-left: 200px; }
+  margin-left: 240px; }
 
-ul.sidebar-nav:hover {
-  overflow-y: auto; }
-
-ul.sidebar-nav {
+.sidebar {
+  font-size: 0.9rem;
+  width: 240px;
   position: fixed;
   overflow: hidden;
-  width: 200px;
+  background: #213246;
   left: 0;
   top: 0;
-  margin: 0;
   height: 100%;
   z-index: 999;
-  background: #213246;
-  font-size: .9rem;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
-  ul.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 3.75rem; }
-    ul.sidebar-nav li a {
-      display: block;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #8c99ac; }
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #677c91; }
+  .sidebar a.active {
+    background-color: #51a5e5;
+    color: #F1F1F1 !important; }
+  .sidebar a:hover {
+    color: #b0bcc7; }
+  .sidebar .sidebar-container {
+    text-indent: 20px; }
+    .sidebar .sidebar-container .sidebar-header {
+      background-color: #1b2a3d;
+      min-height: 95px; }
+      .sidebar .sidebar-container .sidebar-header li {
+        padding: 22px 0; }
+        .sidebar .sidebar-container .sidebar-header li .sidebar-brand {
+          display: block; }
+  .sidebar ul.sidebar-nav li {
+    line-height: 3.2rem; }
+  .sidebar ul.sidebar-nav li.image {
+    text-align: center;
+    padding: 0 20px;
+    margin: 32px 0; }
+  .sidebar .sidebar:hover {
+    overflow-y: auto; }
 
-.active {
-  background-color: #51a5e5;
-  color: #F1F1F1 !important; }
+.img-icon {
+  border-radius: 0.3rem;
+  background: url(https://unsplash.it/100/100?image=314);
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle; }
 
+.logo-container {
+  border-radius: 0.3rem; }
+
+/*  NAVBAR  */
 .navbar {
   min-height: 95px;
   margin-bottom: 20px;
   background-color: #F1F1F1;
-  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
 
 .navbar-fixed-top {
   top: 0; }
@@ -870,10 +894,11 @@ ul.sidebar-nav {
   margin-bottom: 0; }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
+  margin-left: 240px;
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 998; }
+  z-index: 999; }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -959,7 +984,7 @@ ul.sidebar-nav {
 .card.small .card-image,
 .card.medium .card-image,
 .card.large .card-image {
-  max-height: 60%;
+  max-height: 55%;
   overflow: hidden; }
 
 code {
