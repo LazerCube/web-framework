@@ -31,10 +31,10 @@ Gulp
 *   Grid System
 *   Cards
 *   Jumbotron
+*   Navigation
 
 ### Todo
 
-*   Navigation
 *   Buttons
 *   Improve showcase website (Jekyll)
 *   Clean up SASS (_card.scss)
