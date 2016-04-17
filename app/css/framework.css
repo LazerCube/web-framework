@@ -834,10 +834,12 @@ a:hover {
   transition: all .5s ease; }
 
 body.show_sidebar #wrapper {
-  margin-left: 0px; }
+  margin-left: 0px;
+  opacity: 0.3; }
   @media (min-width: 992px) {
     body.show_sidebar #wrapper {
-      margin-left: 240px; } }
+      margin-left: 240px;
+      opacity: 1; } }
 
 #push_sidebar {
   background: #213246;
@@ -885,6 +887,7 @@ body.show_sidebar #wrapper {
 
 body.show_sidebar #push_sidebar {
   left: 0;
+  top: 0;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
 
 .img-icon {

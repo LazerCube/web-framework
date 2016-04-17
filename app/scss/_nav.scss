@@ -2,7 +2,7 @@
 #wrapper {
 	margin-right: 0;
 	overflow: hidden;
-    
+
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -12,9 +12,11 @@
 
 body.show_sidebar #wrapper {
     margin-left: 0px;
+    opacity:0.3;
 
     @include media-breakpoint-up(lg) {
         margin-left: $sidebar-width;
+        opacity:1;
     }
 }
 
@@ -88,6 +90,7 @@ body.show_sidebar #wrapper {
 
 body.show_sidebar #push_sidebar{
     left: 0;
+    top:0;
     @include shadow();
 }
 
