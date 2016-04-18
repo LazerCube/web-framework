@@ -1,0 +1,11 @@
+# Site settings
+title: Web-Framework
+email: info@lazercube.com
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+port: 80
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]

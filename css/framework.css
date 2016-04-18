@@ -827,10 +827,6 @@ a:hover {
 #wrapper {
   margin-right: 0;
   overflow: hidden;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
   transition: all .5s ease; }
 
 body.show_sidebar #wrapper {
@@ -851,10 +847,6 @@ body.show_sidebar #wrapper {
   top: 0;
   height: 100%;
   z-index: 999;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
   transition: all .5s ease; }
   #push_sidebar a {
     display: block;
@@ -934,10 +926,6 @@ body.show_sidebar #push_sidebar {
   right: 0;
   left: 0;
   z-index: 998;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
   transition: all .5s ease; }
 
 body.show_sidebar .navbar-fixed-bottom,
@@ -1079,7 +1067,6 @@ pre {
 .horizontalGradient_1 {
   background: #213246;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #213246, #51a5e5);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #213246, #51a5e5);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }

@@ -1,0 +1,55 @@
+// Normalize
+// Gets all browsers to the same starting postion before reboot
+//
+
+html{
+    font-family: sans-serif;
+}
+
+//
+// Remove default margin.
+//
+
+body{
+    margin: 0;
+}
+
+//
+// Fixes DOCTYPE 100% width
+//
+
+body, html {
+    height:100%;
+}
+
+//
+// Correct 'block' display
+//
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display:block;
+}
+
+//
+// Correct 'inline-block'
+// Normalize vertical alignment of progress
+//
+
+audio,
+canvas,
+progress,
+video{
+    display:inline-block;
+    vertical-align: baseline;
+}
