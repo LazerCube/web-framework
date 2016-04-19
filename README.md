@@ -32,6 +32,7 @@ Gulp
 *   Cards
 *   Jumbotron
 *   Navigation
+*   switched to Jeyll
 
 ### Todo
 
