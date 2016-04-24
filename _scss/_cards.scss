@@ -1,7 +1,7 @@
 .card{
     position: relative;
     margin: $card-margin;
-    background-color: $body-bg;
+    background-color: $body-primary;
     @include border-radius($border-radius-sm);
     @include shadow();
 
@@ -32,7 +32,7 @@
         }
 
         .card-title{
-            color: $font-color-secondary;
+            color: $full-white;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -62,7 +62,7 @@
 .card-panel{
     margin: $card-margin;
     padding: $card-content-padding;
-    background-color: $body-bg;
+    background-color: $body-primary;
     @include border-radius($border-radius-sm);
     @include shadow();
 }

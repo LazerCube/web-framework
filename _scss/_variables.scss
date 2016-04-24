@@ -20,34 +20,32 @@
 //
 // Grayscale and brand colors for use across framework
 
-$tuatara:               #46494C                         !default;
-$william:               #51a5e5                         !default;
-$white:                 #F1F1F1                         !default;
-$alto:                  #C5C3C6                         !default;
-$san-juan:              #213246                         !default;
+$full-white:                #ffffff                         !default; //body
+$off-white:                 #f7f8f8                         !default; //selected objects
+$highlight:                 #dadbdf                         !default; //highlights for body
 
-// Brand Colours
+$brand-darker:              #1d2027;
+$brand-Dark:                #262a33;
+$brand-lighter:             #46494C;
+$brand-light:               #838999;
 
-$font-color-primary:            $tuatara                            !default;
-$font-color-primary-lighter:    lighten($font-color-primary, 10%)   !default;
+$brand-primary:             #45c8dc;
+$brand-primary-dark:        #1f8a9b;
+$brand-primary-middle:      #3eb4c6;
 
-$font-color-secondary:          $white                               !default;
-$font-color-secondary-darker:   $alto                                !default;
-
-$brand-primary:         $william                       !default;
-$brand-primary-dark:    darken($brand-primary, 5%)     !default;
-$brand-primary-darker:  darken($brand-primary, 10%)    !default;
-
-$brand-secondary:       $san-juan                       !default;
-$brand-secondary-dark:  darken($brand-secondary, 5%)   !default;
-$brand-secondary-darker:darken($brand-secondary, 10%)   !default;
-
-$brand-secondary-light: #677c91 !default;       //MAKE CAL
+$brand-orange:              #fd9162                         !default;
+$brand-red:                 #fC4545                         !default;
+$brand-yellow:              #fCB40B                         !default;
+$brand-dark-blue:           #076F8F                         !default;
 
 //Body
 
-$body-bg:               $white                          !default;
-$body-color:            $font-color-primary             !default;
+$font-primary:          $brand-lighter                  !default;
+$font-secondary:        $brand-light                    !default;
+
+$body-primary:          $full-white                     !default;
+$body-secondary:        $off-white                      !default;
+$body-highlight:        $highlight                      !default;
 
 // Options
 //
@@ -73,8 +71,8 @@ $tag-link-decoration:   none    !default;
 //
 // Style for selection
 
-$selection-color:        $font-color-secondary;
-$selection-background:   $font-color-primary;
+$selection-color:        $off-white;
+$selection-background:   $font-primary;
 
 // Grid breakpoints
 //
@@ -116,10 +114,16 @@ $grid-gutter-width:     1.875rem !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
+// import fonts
+
+//@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 $font-family-sans-serif: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
+//$font-family-base:       'Montserrat', sans-serif !default;
 
 //Header tags
 $H-font-weight:             800         !default;
@@ -132,12 +136,8 @@ $H-small-margin-bottom:     0.625rem    !default;
 
 //Small
 
-$small-font-color:  $font-color-primary-lighter     !default;
+$small-font-color:  $font-secondary                 !default;
 $small-font:        65%                             !default;
-
-// import fonts
-
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600";
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 15px !default;
@@ -147,7 +147,7 @@ $line-height-base: 1.5 !default;
 //Hr
 
 $hr-height:     3px                             !default;
-$hr-color:      $font-color-secondary-darker    !default;
+$hr-color:      $body-highlight                 !default;
 
 // Componets
 
@@ -157,8 +157,8 @@ $border-radius-sm:  .2rem   !default;
 
 // Jumbotron
 
-$jumbotron-padding:     2rem            !default;
-$jumbotron-bg:          $alto  !default;
+$jumbotron-padding:     2rem                !default;
+$jumbotron-bg:          $highlight          !default;
 
 // page
 
@@ -173,16 +173,16 @@ $page-title-line-height: 2px        !default;
 
 $thumb-overlay-text-align:  left                            !default;
 $thumb-overlay-font-size:   1.5rem                          !default;
-$thumb-overlay-font-color:  $font-color-secondary           !default;
+$thumb-overlay-font-color:  $full-white                     !default;
 
 $thumb-container-width: 85%         !default;
 $thumb-container-padding: 1rem      !default;
 
 // Tags
 
-$tag-font-color: $font-color-secondary      !default;
+$tag-font-color: $full-white                !default;
 $tag-font-size: 0.8rem                      !default;
-$tag-color:     $brand-secondary            !default;
+$tag-color:     $brand-primary              !default;
 $tag-padding:   0.25rem 0.55rem             !default;
 $tag-margin:    0.50rem 0.35rem 0 0         !default;
 
@@ -193,11 +193,11 @@ $code-margin:           0 0.2rem                    !default;
 $code-padding:          0.15rem 0.5rem              !default;
 
 $pre-margin:            1rem 0rem                   !default;
-$pre-color:             $font-color-secondary       !default;
+$pre-color:             $full-white                 !default;
 
 $code-pre-margin:       1rem 1.5rem                 !default;
 $code-background:       #333333                     !default;
-$code-color:            $font-color-secondary       !default;
+$code-color:            $full-white                 !default;
 
 $pre-scrollable-max-height: 340px                   !default;
 
@@ -208,8 +208,8 @@ $card-content-padding:  20px                        !default;
 $card-title-line-height:3.2rem                      !default;
 $card-title-font-size:  1.6rem                      !default;
 
-$card-action-padding:   $card-content-padding                  !default;
-$card-action-border:    1px solid $font-color-secondary-darker !default;
+$card-action-padding:   $card-content-padding       !default;
+$card-action-border:    1px solid $body-highlight   !default;
 
 $card-link-color:       $link-color                 !default;
 
@@ -219,21 +219,23 @@ $card-large:            500px                       !default;
 
 $card-image-size-max:   55%                         !default;
 
-// Nav sidebar-nav
+// Sidebar
 
-$sidebar-width: 240px   !default;
-$sidebar-font-size: 0.9rem  !default;
+$sidebar-width: 200px   !default;
+$sidebar-font-size: 1rem  !default;
 
-$sidebar-padding:   20px    !default;
+$sidebar-main-primary:       $brand-Dark;
+$sidebar-main-secondary:     $brand-lighter;
+$sidebar-main-tertiary:      #393d47;
 
-$sidebar-color:                     $brand-secondary                !default;
-$sidebar-font-color:                $brand-secondary-light          !default;
+$sidebar-main-font:          #4d515c;
 
-$sidebar-font-color-active:         $font-color-secondary           !default;
-$sidebar-active-bg:                 $brand-primary                  !default;
-$sidebar-active-shadow:             inset 0px -30px 50px 0px rgba(0,0,0,0.15)  !default;
-
+$sidebar-active-primary:     $brand-darker;
+$sidebar-active-secondary:   $brand-light;
 
 // navbar
 
-$navbar-min-height: 95px    !default;
+$navbar-min-height: 65px    !default;
+
+$navbar-bg-primary:         $brand-primary              !default;
+$navbar-bg-secondary:       $brand-primary-dark         !default;
