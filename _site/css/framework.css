@@ -847,14 +847,14 @@ body.show_sidebar #wrapper {
   top: 0;
   height: 100%;
   z-index: 999;
-  transition: all .5s ease;
-  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
+  transition: all .5s ease; }
   #push_sidebar .sidebar-container ul.sidebar-nav {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold; }
     #push_sidebar .sidebar-container ul.sidebar-nav li.sidebar-header {
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      background-color: #3eb4c6; }
       #push_sidebar .sidebar-container ul.sidebar-nav li.sidebar-header a {
         color: #f7f8f8;
         font-size: 1.2rem;
@@ -897,8 +897,7 @@ body.show_sidebar #push_sidebar {
   background-color: #45c8dc;
   color: #1f8a9b;
   font-size: 2rem;
-  display: block;
-  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px; }
+  display: block; }
   .navbar .navbar-left {
     float: left; }
   .navbar .navbar-right {

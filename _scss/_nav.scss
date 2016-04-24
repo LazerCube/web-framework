@@ -37,7 +37,6 @@ body.show_sidebar #wrapper {
     -o-transition: all .5s ease;
     transition: all .5s ease;
 
-	@include shadow();
 
 	.sidebar-container{
 		ul.sidebar-nav{
@@ -47,6 +46,8 @@ body.show_sidebar #wrapper {
 
 			li.sidebar-header{
 				text-transform: capitalize;
+				background-color: $brand-primary-middle;
+
 				a{
 					color: #f7f8f8;
 					font-size:1.2rem;
@@ -109,7 +110,6 @@ body.show_sidebar #push_sidebar{
 	font-size: 2rem;
 	display:block;
 
-	@include shadow();
 
 	.navbar-left{
 		float:left;
