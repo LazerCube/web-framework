@@ -919,7 +919,8 @@ body.show_sidebar #push_sidebar {
     .navbar .navbar-nav li a {
       color: #1f8a9b;
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 16px 20px;
+      font-size: 1.5rem;
       display: block; }
 
 .navbar-nav li:last-child {
