@@ -1,0 +1,132 @@
+button, input, select, textarea {
+    margin: 0;
+    line-height: inherit;
+    border-radius: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    line-height: $btn-line-height;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+
+    color: $full-white;
+    background-color: $highlight;
+    border-color: $highlight;
+
+    @include border-radius($border-radius-sm);
+}
+
+.btn .btn:hover, .btn:focus, .btn:active{
+    outline:none;
+}
+
+.btn:hover{
+    opacity: 0.75;
+}
+
+.btn-sm{
+    padding: .25rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.btn-lg{
+    padding: .75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.333333;
+}
+
+.btn-full{
+    width:100%;
+    display: block;
+}
+
+.btn-primary {
+    color: $btn-primary-text;
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-bg;
+}
+
+.btn-secondary {
+    color: $highlight;
+    background-color: transparent;
+    border-color: $highlight;
+}
+
+.btn-success{
+    color: $btn-primary-text;
+    background-color: $brand-orange;
+    border-color: $brand-orange;
+}
+
+.btn-info{
+    color: $btn-primary-text;
+    background-color: $brand-dark-blue;
+    border-color: $brand-dark-blue;
+}
+
+.btn-warning{
+    color: $btn-primary-text;
+    background-color: $brand-yellow;
+    border-color: $brand-yellow;
+}
+
+.btn-danger{
+    color: $btn-primary-text;
+    background-color: $brand-red;
+    border-color: $brand-red;
+}
+
+
+
+// Search
+
+.search-container{
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    margin-top:12px;
+    padding-left: 15px;
+}
+
+.search-container input#search::-webkit-input-placeholder {
+   color: #f7f8f8;
+}
+
+.search-container .icon{
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 2px;
+  z-index: 1;
+  color: #f7f8f8;
+  font-size: 1.4rem;
+}
+
+.search-container input#search:hover, .search-container input#search:focus, .search-container input#search:active{
+    outline:none;
+}
+
+.search-container input#search{
+  width: 450px;
+  height: 35px;
+  background: #1f8a9b;
+  border: none;
+  font-size: 1rem;
+  float: left;
+  color: #f7f8f8;
+  padding-left: 45px;
+
+  @include border-radius($border-radius-sm);
+}
