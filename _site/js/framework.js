@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("Javascript running");
     // run test on initial page load
     checkSize();
 
@@ -28,6 +29,7 @@ $(function(){
 
 //Function to the css rule
 function checkSize(){
+    console.log("Check Size");
     if ($(".nav_trigger").css("visibility") == "visible" ){
         if($("body").hasClass( "show_sidebar" )){
             $("body").removeClass("show_sidebar");
