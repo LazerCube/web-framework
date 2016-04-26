@@ -31,13 +31,19 @@ $(function(){
 function checkSize(){
     console.log("Check Size");
     if ($(".nav_trigger").css("visibility") == "visible" ){
+        console.log("is visible");
         if($("body").hasClass( "show_sidebar" )){
             $("body").removeClass("show_sidebar");
+            console.log("Remove sidebar");
         }
     }
     else{
         if($( "body" ).hasClass( "" )){
             $("body").addClass("show_sidebar");
+            console.log("Add sidebar");
+        }
+        else{
+            console.log("sidebar already out")
         }
     }
 }
