@@ -1,13 +1,9 @@
 
 #wrapper {
+	padding-top: $navbar-min-height;
 	margin-right: 0;
 	overflow: hidden;
-
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    transition: none;
 }
 
 body.show_sidebar #wrapper {
@@ -15,6 +11,7 @@ body.show_sidebar #wrapper {
     opacity:0.3;
 
     @include media-breakpoint-up(lg) {
+		margin-left: 200px;
         margin-left: $sidebar-width;
         opacity:1;
     }
@@ -37,6 +34,9 @@ body.show_sidebar #wrapper {
     -o-transition: all .5s ease;
     transition: all .5s ease;
 
+	@include media-breakpoint-up(lg){
+		transition: none;
+	}
 
 	.sidebar-container{
 		ul.sidebar-nav{
@@ -171,17 +171,12 @@ body.show_sidebar #push_sidebar{
     right: 0;
     left: 0;
     z-index: 998;
-
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 body.show_sidebar .navbar-fixed-bottom,
 body.show_sidebar .navbar-fixed-top{
-    margin-left: 0px;
+	margin: inherit;
+    z-index: 998;
 
     @include media-breakpoint-up(lg) {
         margin-left: $sidebar-width;
