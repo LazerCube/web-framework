@@ -20,8 +20,8 @@
 //
 // Grayscale and brand colors for use across framework
 
-$full-white:                #ffffff                         !default; //body
-$off-white:                 #f7f8f8                         !default; //selected objects
+$full-white:                #f0f0f0                         !default; //body
+$off-white:                 #f8f8f8                         !default; //selected objects
 $highlight:                 #dadbdf                         !default; //highlights for body
 
 $brand-darker:              #1d2027;
@@ -54,7 +54,7 @@ $body-highlight:        $highlight                      !default;
 $enable-grid-classes:           true    !default;
 $enable-flex:                   false   !default;
 $enable-rounded:                true    !default;
-$enable-shadow:                 true    !default;
+$enable-shadow:                 false   !default;
 
 // Links
 //
@@ -140,13 +140,13 @@ $small-font-color:  $font-secondary                 !default;
 $small-font:        65%                             !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root: 15px !default;
+$font-size-root: 14px !default;
 $font-size-base: 1rem !default;
 $line-height-base: 1.5 !default;
 
 //Hr
 
-$hr-height:     3px                             !default;
+$hr-height:     1px                             !default;
 $hr-color:      $body-highlight                 !default;
 
 // Componets
@@ -202,6 +202,9 @@ $code-color:            $full-white                 !default;
 $pre-scrollable-max-height: 340px                   !default;
 
 // card
+
+$card-bg:               $off-white                  !default;
+$card-margin:           0.9375rem 0                 !default;
 
 $card-margin:           0.5rem 0 1rem 0             !default;
 $card-content-padding:  20px                        !default;

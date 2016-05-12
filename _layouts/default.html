@@ -7,8 +7,12 @@
         {% include sidebar.html %}
         <div id="wrapper">
             {% include header.html %}
-            {{ content }}
-            {% include footer.html %}
+            <div id="content-wrapper">
+                <div class="container-fluid">
+                    {{ content }}
+                    {% include footer.html %}
+                </div>
+            </div>
         </div>
     </body>
 </html>

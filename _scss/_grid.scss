@@ -37,3 +37,18 @@
 @if $enable-grid-classes{
     @include make-grid-columns();
 }
+
+// --------------------------------
+//             Misc
+// --------------------------------
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:center;
+    margin-right:-4px;
+}

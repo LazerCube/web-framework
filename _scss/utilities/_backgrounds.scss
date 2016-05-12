@@ -1,8 +1,64 @@
-.horizontalGradient_1{
-    @include horizontalGradient($brand-primary, $brand-primary);
-}
-
 .palette{
     height: 100px;
     @include border-radius($border-radius-sm);
+}
+
+#one{
+    background-color: $brand-primary;
+}
+
+#two{
+    background-color: $brand-primary-middle;
+}
+
+#three{
+    background-color: $brand-primary-dark;
+}
+
+#four{
+    background-color: $brand-Dark;
+}
+
+#five{
+    background-color: $brand-darker;
+}
+
+#six{
+    background-color: $brand-lighter;
+}
+
+#seven{
+    background-color: $brand-light;
+}
+
+#eight{
+    background-color: $full-white;
+}
+
+#nine{
+    background-color: $off-white;
+}
+
+#ten{
+    background-color: $highlight;
+}
+
+#orange{
+    background-color: $brand-orange;
+}
+
+#red{
+    background-color: $brand-red;
+}
+
+#yellow{
+    background-color: $brand-yellow;
+}
+
+#blue{
+    background-color: $brand-dark-blue;
+}
+
+.horizontalGradient_1 {
+    @include horizontalGradient($brand-primary, $brand-primary);
 }
