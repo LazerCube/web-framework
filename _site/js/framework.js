@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 $(function(){
     $('body').on('click',function(event){
-        if ($(".nav_trigger").css("visibility") == "visible" ){
+        if ($(".navbar-toggler").is(":visible")){
             if($("body").hasClass("show_sidebar")){
                 if(!$(event.target).is('#push_sidebar')){
                     event.stopPropagation();
@@ -20,7 +20,7 @@ $(function(){
         }
     });
 
-    $(".nav_trigger").click(function() {
+    $(".navbar-toggler").click(function() {
         console.log("TOGGLE");
         event.stopPropagation();
         $("body").addClass("show_sidebar");
@@ -30,7 +30,7 @@ $(function(){
 //Function to the css rule
 function checkSize(){
     console.log("Check Size");
-    if ($(".nav_trigger").css("visibility") == "visible" ){
+    if ($(".navbar-toggler").is(":visible")){
         if($("body").hasClass( "show_sidebar" )){
             $("body").removeClass("show_sidebar");
         }
