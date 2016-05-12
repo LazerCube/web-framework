@@ -38,4 +38,5 @@ Gulp
 
 *   Buttons
 *   Improve showcase website (Jekyll)
-*   Clean up SASS (_card.scss)
+*   Clean up SASS ***_card.scss***
+*   Clean up SASS ***_nav.scss***
